@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="UTF-8">
+      <title>Firebase Toturial</title>
+      <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+
+    </head>
+    <body>
+      <h1>Hello World!</h1>
+      我們用了 node <script>document.write(process.versions.node)</script>,
+      Chrome <script>document.write(process.versions.chrome)</script>,
+      以及 Electron <script>document.write(process.versions.electron)</script>.
+      <br><br><br><br>
+      <div>
+          <input type="text" placeholder="Email: " id="email"><br><br>
+          <input type="password" placeholder="Password: " id="password"><br><br>
+
+          <button id="signUpBtn">Sign Up</button><br><br>
+          <button id="signInBtn">Sign In</button>
+
+      </div>
+    </body>
+    <script>
+      require('./renderer.js');
+    </script>
+  </html>
